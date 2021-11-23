@@ -81,6 +81,7 @@ img {
   display:block;
   padding-top: 32px; ;
   padding-bottom: 32px;
+  position: relative;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -92,6 +93,18 @@ img {
 
 .current{
   color: var(--accent-text-color);
+}
+.link-header.current::after{
+  content: "";
+  width:100%;
+  height: 4px;;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  
+
+  background: #2196F3;
+  border-radius: 2px;
 }
 .link-contact-header {
     font-weight: 500;
@@ -437,6 +450,48 @@ align-items: center;
   height: auto;
   width: 370px;
 }
+.item-work{
+  position: relative;
+}
+ .work-dekstop::after{
+  position: absolute;
+  content: "Десктопные приложения";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 70px;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0px;
+  right: 0px;
+}
+.work-mobille::after{
+  position: absolute;
+  content: "Мобильные приложения";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 70px;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0px;
+  right: 0px;
+}
+.work-desing::after{
+  position: absolute;
+  content: "Дизайнерские решения";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 70px;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0px;
+  right: 0px;
+}
 
 .work{
   padding-top: 94px;
@@ -449,6 +504,7 @@ align-items: center;
 .item-work{
   margin-right: 30px;
 }
+
 .item-work:nth-child(3n){
   margin-right: 0px;
 }
